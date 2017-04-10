@@ -3,12 +3,12 @@ class logrotate (
   Enum[
     'present',
     'absent',
-    'latest']      $ensure            = present,
-  Boolean          $hieramerge        = false,
-  Boolean          $manage_cron_daily = true,
-  String           $package           = 'logrotate',
-  Hash             $rules             = { },
-  Optional[String] $config            = undef,
+    'latest']    $ensure            = present,
+  Boolean        $hieramerge        = false,
+  Boolean        $manage_cron_daily = true,
+  String         $package           = 'logrotate',
+  Hash           $rules             = { },
+  Optional[Hash] $config            = undef,
 ) inherits logrotate::params {
 
   include ::logrotate::install
