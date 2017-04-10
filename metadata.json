@@ -21,10 +21,6 @@
     {
       "name": "puppet",
       "version_requirement": ">= 4.0.0 < 5.0.0"
-    },
-    {
-      "name": "pe",
-      "version_requirement": ">= 2015.2.0 < 2016.5.0"
     }
   ],
   "operatingsystem_support": [
