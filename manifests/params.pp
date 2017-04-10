@@ -6,10 +6,10 @@ class logrotate::params {
     'Debian': {
       $default_su_group = versioncmp($::operatingsystemmajrelease, '14.00') ? {
         1         => 'syslog',
-        default   => undef
+        default   => undef,
       }
       $conf_params = {
-        su_group => $default_su_group
+        su_group => $default_su_group,
       }
     }
     'Gentoo': {
